@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pXx-hZ-OeJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jhq-xc-h0u">
+            <objects>
+                <navigationController id="pXx-hZ-OeJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9uJ-Dt-nOU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ukp-Sn-Dwd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YwU-iF-GGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="37"/>
+        </scene>
+        <!--Entry View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EntryViewController" customModule="RegistrationTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-mp-USL" customClass="EnterButton" customModule="RegistrationTestTask" customModuleProvider="target">
+                                <rect key="frame" x="114" y="311.5" width="147" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="Eyb-gb-meX"/>
+                                    <constraint firstAttribute="height" constant="44" id="WPU-gD-B8G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Авторизоваться">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Avb-J8-wT8" kind="show" id="V2b-Gq-41X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nth-mp-USL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6MT-Dl-8dV"/>
+                            <constraint firstItem="Nth-mp-USL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9PQ-pq-Xeg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ehF-G9-WpP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="36"/>
+        </scene>
+        <!--Авторизация-->
+        <scene sceneID="ere-ca-J7p">
+            <objects>
+                <viewController title="Авторизация" id="Avb-J8-wT8" customClass="AutorisationViewController" customModule="RegistrationTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9zy-Iv-avy"/>
+                        <viewControllerLayoutGuide type="bottom" id="fV1-sB-BqC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Due-aE-rEp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWS-jM-RAe" customClass="EnterButton" customModule="RegistrationTestTask" customModuleProvider="target">
+                                <rect key="frame" x="114" y="345" width="147" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtonPressed:" destination="Avb-J8-wT8" eventType="touchUpInside" id="ojy-2A-l4O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEH-Wk-J80">
+                                <rect key="frame" x="58" y="406" width="258" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="У меня еще нет аккаунта. Создать."/>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="Avb-J8-wT8" eventType="touchUpInside" id="5kS-lO-FNk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoN-tV-cgV" customClass="AutorisationInputView" customModule="RegistrationTestTask" customModuleProvider="target">
+                                <rect key="frame" x="15" y="211" width="338" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMI-oc-IvP" customClass="AutorisationPasswordInputView" customModule="RegistrationTestTask" customModuleProvider="target">
+                                <rect key="frame" x="15" y="282" width="338" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="eMailInputView" destination="RoN-tV-cgV" id="y1d-IH-S91"/>
+                        <outlet property="enterButton" destination="rWS-jM-RAe" id="i0r-rC-vmj"/>
+                        <outlet property="passwordInputView" destination="aMI-oc-IvP" id="boW-td-blO"/>
+                        <outlet property="registerButton" destination="vEH-Wk-J80" id="dPk-nr-oXC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAK-At-eWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="37"/>
+        </scene>
+    </scenes>
+</document>
